@@ -8,12 +8,39 @@ Things you may want to cover:
 
 ## Prerequisites
 
+### Install Homebrew
+
+First, we need to install Homebrew. Homebrew allows us to install and compile software packages easily from source.
+
+Homebrew comes with a very simple install script. When it asks you to install XCode CommandLine Tools, say yes.
+
+Open Terminal and run the following command:
+
+`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
 ### Install Ruby and Rails
 Before we begin, make sure you have ruby version >=2.2.2 and rails version 5.
 
 `$ ruby -v # ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-darwin16]`
 
 `$ rails -v # Rails 5.0.1`
+
+##### Ruby - MacOS
+
+Ruby comes by default in Mac OS Sierra and El Capitan. If not, it will be easy after we already installed **Homebrew**.
+
+`$ brew install ruby`
+
+This should install the lastest version of Ruby
+
+Sometimes you need to update it using some third party Ruby Manager.
+Check out the references of these third party [Managers for Ruby](https://www.ruby-lang.org/en/documentation/installation/) under _Installers_ topic.
+
+##### Rails - MacOS
+
+Once you have Ruby installed, all you need to do is run the command:
+
+`$ gem install rails`
 
 ### Installing MongoDB
 Installing MongoDB varies by platform. If you are using OS-X installing MongoDB is pretty easy. Simply perform the following steps:
